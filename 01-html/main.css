@@ -116,9 +116,24 @@
     font-weight: bold;
 }
 .price .original{
-    text-decoration: line-through;
+    text-decoration:line-through;
     font-size: 12px;
     font-weight: normal;
 }
+
+/* Styles for calendar */
+*, 
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+.primary-bg{
+    background-color: #5e35b1;
+}
+.container{
+    padding: 0 15px;
+}
+
+
 
 

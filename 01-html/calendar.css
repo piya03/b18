@@ -81,6 +81,9 @@ small, .font_small {font-size: 0.667em;}
   position: relative;
   padding: 4px;
 }
+.calendar li div.holiday{
+  background-color: rgba(0,255,0,.1);
+}
 .calendar li div span{
   position: absolute;
   right: 0;

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="100" viewBox="0 0 136 100">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        font-size: 18px;
+        fill: #fff;
+        text-anchor: middle;
+        font-family: Poppins;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+  <image y="64" width="94" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAAkCAYAAAAAa43JAAAAa0lEQVRoge3QUQGAIBQAsScB7N/KJlaAFtzPFmHP/717uG4pb4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4iPiI+Ij4gvzMwBiR8DEtzuqFkAAAAASUVORK5CYII="/>
+  <image class="cls-1" x="94" y="64" width="42" height="36" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAkCAYAAAD/yagrAAAASUlEQVRYhe3OQRGAMBAAsQMBaK5DnKABE9tHZxIFub73WXOA+4TkiG4gWhOtidZEa6I10ZpoTbQmWhOtidZEa6I10ZpoTTQ1Mz/sYQKTzD/ZygAAAABJRU5ErkJggg=="/>
+  <path class="cls-2" d="M81.959,30.309a2.615,2.615,0,0,0-1.247-1.589,37.774,37.774,0,0,1,.636-4.815,0.432,0.432,0,1,0-.268-0.059s-0.912,4.669-1.054,4.724a1.4,1.4,0,0,1-.8-0.019c-0.038-.094-0.075-4.691-0.075-4.691a0.429,0.429,0,1,0-.276-0.019s-0.046,4.71-.279,4.766a4,4,0,0,0-1.031.53c-1.107.777-1.546,3.665-1.834,5.046-0.7-1.467-1.373-4.658-3.477-6.7-3-2.913-10.357-3.059-12.493,2.786-1.645,4.5-.237,7.214.2,8.011-1.452.024-2.446,0.032-2.446,0.032-1.367.3-2.831,2.079,0.586,2.178s16.465,1.356,19.154-.468a6.669,6.669,0,0,0,2.852-5.636C79.911,32.9,82.35,32.387,81.959,30.309Z"/>
+  <circle class="cls-3" cx="69" cy="32" r="25"/>
+  <text id="Locate_me" data-name="Locate me" class="cls-4" x="67.246" y="87.867"><tspan x="67.246">Locate me</tspan></text>
+</svg>

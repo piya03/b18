@@ -1,0 +1,128 @@
+/* Selectors
+
+  selectorname {
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    property-name: value;
+    ...;
+    ...;
+    ...
+  }
+
+
+*/
+
+/* 1. Universal Selector - applies to every element in the document*/
+
+*{
+  box-sizing: content-box;
+}
+/* 2. Tag or Type Selector - redefine an html element, override existing properties*/
+
+h1{
+  font-weight: 400;
+  border-bottom: 1px dashed crimson;
+  font-size: 40px;
+  background-color: pink;
+  padding: 5px 15px;
+}
+p{
+  font-weight: 300;
+  font-size: 18px;
+  color: #444;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* 3. Class selectors  - You create a user defined class with properties, and apply the same to your desired element using class attribute*/
+
+.dabba{
+  width:200px;
+  border: solid 10px red;
+  background-color: lime;
+  padding: 50px;
+  font-weight: 700;
+}
+.specificity-killer{
+  font-size: 22px !important;
+}
+
+.title{
+  border-bottom: 4px double green;
+  font-size: 30px;
+  background-color: lightgreen;
+}
+
+/* 4. ID selectors  - You create a user defined id with properties, and apply the same to your desired element using id attribute. ID selectors are unique. You can't use a same id twice on any document*/
+
+#main-heading{
+  border-bottom: 4px double blue;
+  font-size: 50px;
+  background-color: lightblue;
+}
+
+/* 5. Psuedo Selectors
+      5.1 Psuedo Classes - are written using sinlge colon
+
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/
+
+a:link{
+}
+a{
+  color:red;
+  text-decoration: none;
+}
+a:hover{
+  background-color: yellow;
+  text-decoration: underline;
+}
+a:visited{
+}
+a:active{
+  outline: 3px double red;
+}
+a:focus{
+  outline: 3px double green;
+}
+
+.main-nav{
+  list-style: none;
+}
+.main-nav li{
+  display: inline-block;
+}
+.main-nav li:first-child{
+  border: 1px solid #000;
+}
+.main-nav li:last-child{
+  border: 1px solid #000;
+}
+.main-nav li:nth-child(odd){
+  border: 1px solid #0F0;
+}
+.main-nav li:nth-child(even){
+  border: 1px solid #F00;
+}
+.main-nav li:nth-child(3n+1){
+  background-color: wheat;
+}
+
+/* 5. Psuedo Selectors
+      5.2 Psuedo Elements - are written using double colon
+
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+*/
+
+.main-nav li a::before{
+  content: "~ ";
+}
+.main-nav li a::after{
+  content: "  > ";
+}
+

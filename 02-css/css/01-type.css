@@ -124,45 +124,48 @@ inherit;
 	font-family: 'Unlock', cursive;
 	font-style: italic;
 }
-.fw1{font-weight: 100;}
-.fw2{font-weight: 200;}
-.fw3{font-weight: 300;}
-.fw4{font-weight: 400;}
-.fw5{font-weight: 500;}
-.fw6{font-weight: 600;}
-.fw7{font-weight: 700;}
-.fw8{font-weight: 800;}
-.fw9{font-weight: 900;}
+.fw1 {font-weight: 100;}
+.fw2 {font-weight: 200;}
+.fw3 {font-weight: 300;}
+.fw4 {font-weight: 400;}
+.fw5 {font-weight: 500;}
+.fw6 {font-weight: 600;}
+.fw7 {font-weight: 700;}
+.fw8 {font-weight: 800;}
+.fw9 {font-weight: 900;}
 
 
-html{
-	font-size: 16px
+html{	
+	font-size: 16px;
+	font-family: 'Roboto', tahoma, sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
+
+	font: normal 300 16px/1.4 'Roboto', tahoma, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Noto Serif SC', Georgia, serif;
 }
 
-.em-demo{
+
+
+
+.dabba{
 	border: 1px solid #000;
 	padding: 20px;
 	width: 800px;
 	margin: 20px auto;
-
-
-	font-size: 2em;
 }
-.em-demo p{
-	font-size: .5em;
-}
-.rem-demo{
-	border: 1px solid #000;
-	padding: 20px;
-	width: 800px;
-	margin: 20px auto;
 
-
-	font-size: 2rem;
-}
-.rem-demo p{
-	font-size: .5rem;
-}
+.em-demo {font-size: 2em;}
+.em-demo p {font-size: .5em;}
+.rem-demo {font-size: 2rem;}
+.rem-demo p {font-size: .5rem;}
 
 .vw-demo{
 	width: 800px;
@@ -173,7 +176,7 @@ html{
 	transition: 250ms ease all;
 }
 .vw-demo:hover{
-	font-size: 15vw;
+	font-size: 12vw;
 }
 
 
@@ -188,8 +191,32 @@ html{
 }
 
 
+.bg1 {background-color: lightgreen;border: 1px solid #000;}
+.bg2 {background-color: lightblue;}
+
+.lh-demo{
+	font-size: 2em;
+	line-height: 2;
+
+	margin-top: 0;
+	text-align: center;
+}
+
+
+.tt-demo{
+	text-transform: uppercase;
+}
+
+.dabba h3{
+	text-transform: uppercase;
+}
+
+.color-demo{
+	color:rgba(50,250,50,.5)
+}
 
 
 
-
-
+.td-demo{
+	text-decoration: underline overline line-through none;
+}

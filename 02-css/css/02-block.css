@@ -72,5 +72,44 @@ inherit;
    Demo of Block related properties
    ========================================================================== */
 
-   
-   
+   .word-spacing-demo{
+       word-spacing: 10px;
+   }
+   .letter-spacing-demo{
+    letter-spacing: 10px;
+    }
+
+
+    .va-demo{
+        vertical-align: top;
+    }
+    .va-demo2{
+        vertical-align: super;
+    }
+    .va-demo3{
+        vertical-align: sub;
+    }    
+    .va-demo4{
+        vertical-align: middle;
+    }
+
+    .ta-demo,
+    .ta-demo1,
+    .ta-demo2,
+    .ta-demo3,
+    .ta-demo4{
+        border: 1px solid #000;
+        padding: 10px;
+    }
+    .ta-demo1{
+        padding: 10px;
+    }
+    .ta-demo2{
+        padding: 10px;
+    }
+    .ta-demo3{
+        padding: 10px;
+    }
+    .ta-demo4{
+        padding: 10px;
+    }

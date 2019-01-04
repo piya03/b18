@@ -197,7 +197,6 @@ h6{
 .lh-demo{
 	font-size: 2em;
 	line-height: 2;
-
 	margin-top: 0;
 	text-align: center;
 }
@@ -219,4 +218,47 @@ h6{
 
 .td-demo{
 	text-decoration: underline overline line-through none;
+}
+
+.cd1{	color: indianred}
+.cd2{ color:rgb(205,92,92)}
+.cd3{ 
+	color: #cd5c5c;
+	transition: color 1000ms linear
+}
+.cd3:hover{ 
+	color: #000;
+	transition: color 1000ms linear
+}
+.cd4{ 
+	color:rgba(205,92,92,.5);
+	width: 400px;
+	line-height: .3;
+}
+
+
+.widget{
+	min-width: 300px;
+	max-width: 450px;
+	margin: 20px 40px 20px auto;
+	border-radius: 10px;
+
+	background-color: #8343f0;
+}
+.widget h1{
+	background-color: rgba(0,0,0,.2);
+	margin: 0 0 20px;
+	color: #FFF;
+	padding: 15px 20px;
+	border-radius: 10px 10px 0 0;
+}
+.widget p{
+	color: #FFF;
+	padding: 15px 20px;
+}
+.widget footer{
+	background-color: rgba(255,255,255,.2);
+	color: #FFF;
+	padding: 15px 20px;
+	border-radius: 0 0 10px 10px;
 }

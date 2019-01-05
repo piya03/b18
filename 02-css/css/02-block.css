@@ -113,3 +113,95 @@ inherit;
     .ta-demo4{
         padding: 10px;
     }
+
+
+
+.ti-demo{
+    text-indent: 20px;
+}
+
+
+
+
+.ws-demo{
+    white-space: pre;
+}
+.ws-demo-nowrap{
+    white-space: nowrap;
+}
+
+
+.ws-demo-pre-wrap{
+    white-space: pre-wrap;
+}
+
+.ws-demo-pre-line{
+    white-space: pre-line;
+}
+
+.profile-box{
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.profile-box img{
+    border-radius: 50%;
+}
+.profile-box h2{
+    word-wrap: break-word;
+}
+
+.bx{
+    border: 1px solid #000;
+}
+
+.display-demo1{
+    display: inline;
+}
+.display-demo2{
+    display: block;
+}
+
+.linkz{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.linkz > li{
+    border: 1px solid #000;
+    display: inline;
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    border: 1px solid rgba(69, 214, 2, 0.89);
+    background-color: #fff;
+    top: 20px;
+    left: 0;
+    padding-left: 0;
+    display: none;
+}
+.linkz > li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu li{
+    padding: 4px
+}
+.sub-menu li a{
+    padding: 4px;
+    background-color: rgb(3, 94, 3);
+    color: #FFF;
+    text-decoration: none;
+}
+
+.display-inline-demo{
+    width: 300px;
+    display: inline-block;
+}
+
+

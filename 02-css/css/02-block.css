@@ -166,17 +166,54 @@ inherit;
     display: block;
 }
 
+
+/* 
+***************************************
+***********Navigation menu style*******
+***************************************
+*/
+
 .linkz{
     list-style: none;
-    margin: 0;
-    padding: 0
+    margin: 50px 0 25px;
+    padding: 0 0 0 10px;
+    border-bottom: 4px solid #5c007a;
 }
 .linkz > li{
-    border: 1px solid #000;
-    display: inline;
+    display: inline-block;
     position: relative;
 }
-.sub-menu{
+.linkz > li > a{
+    display: block;
+    position: relative;
+    padding: 2px 10px;
+    background-color: #8e24aa;
+    border-radius: 6px 6px 0 0;
+    color: #FFF;
+    text-decoration: none;
+}
+.linkz > li.active > a{
+    padding-top: 6px;
+    background-color: #5c007a;
+}
+.linkz > li.has-submenu > a{
+    padding-right: 30px;
+}
+.linkz > li.has-submenu > a:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border-bottom: 1px solid #FFF;    
+    border-right: 1px solid #FFF; 
+    transform: rotate(45deg)   
+}
+.linkz > li > a:hover{
+    background-color: #5c007a;
+}
+.linkz .submenu{
     position: absolute;
     border: 1px solid rgba(69, 214, 2, 0.89);
     background-color: #fff;
@@ -185,14 +222,14 @@ inherit;
     padding-left: 0;
     display: none;
 }
-.linkz > li:hover .sub-menu{
+.linkz > li:hover .submenu{
     display: block;
 }
 
-.sub-menu li{
+.linkz .submenu li{
     padding: 4px
 }
-.sub-menu li a{
+.linkz .submenu li a{
     padding: 4px;
     background-color: rgb(3, 94, 3);
     color: #FFF;
@@ -205,3 +242,135 @@ inherit;
 }
 
 
+
+/* 
+***************************************
+***********Navigation menu style*******
+***************************************
+*/
+
+.linkz1{
+    list-style: none;
+    margin: 50px 0 25px;
+    padding: 0 0 0 10px;
+}
+.linkz1 > li{
+    display: inline-block;
+    position: relative;
+}
+.linkz1 > li > a{
+    display: block;
+    position: relative;
+    padding: 2px 20px;
+    background-color: #8e24aa;
+    border-radius: 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+.linkz1 > li.active > a{
+    background-color: #5c007a;
+}
+.linkz1 > li.has-submenu > a{
+    padding-right: 30px;
+}
+.linkz1 > li.has-submenu > a:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border-bottom: 1px solid #FFF;    
+    border-right: 1px solid #FFF; 
+    transform: rotate(45deg)   
+}
+.linkz1 > li > a:hover{
+    background-color: #5c007a;
+}
+.linkz1 .submenu{
+    position: absolute;
+    border: 1px solid rgba(69, 214, 2, 0.89);
+    background-color: #fff;
+    top: 20px;
+    left: 0;
+    padding-left: 0;
+    display: none;
+}
+.linkz1 > li:hover .submenu{
+    display: block;
+}
+
+.linkz1 .submenu li{
+    padding: 4px
+}
+.linkz1 .submenu li a{
+    padding: 4px;
+    background-color: rgb(3, 94, 3);
+    color: #FFF;
+    text-decoration: none;
+}
+
+.display-inline-demo{
+    width: 300px;
+    display: inline-block;
+}
+
+
+/* 
+***************************************
+***********Content demo****************
+***************************************
+*/
+
+.content-demo{
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 20px 40px
+}
+.content-demo li:before{
+    content: "Chapter: ";
+}
+
+
+
+/* 
+***************************************
+***********text-overflow demo**********
+***************************************
+*/
+
+
+
+.widget{
+	min-width: 300px;
+	max-width: 800px;
+	margin: 20px auto 20px auto;
+	border-radius: 10px;
+
+	background-color: #8343f0;
+}
+.widget h1{
+	background-color: rgba(0,0,0,.2);
+	margin: 0 0 20px;
+	color: #FFF;
+	padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+
+
+}
+.widget p{
+	color: #FFF;
+	padding: 15px 20px;
+}
+.widget footer{
+	background-color: rgba(255,255,255,.2);
+	color: #FFF;
+	padding: 15px 20px;
+	border-radius: 0 0 10px 10px;
+}

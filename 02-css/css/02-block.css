@@ -310,11 +310,6 @@ inherit;
     text-decoration: none;
 }
 
-.display-inline-demo{
-    width: 300px;
-    display: inline-block;
-}
-
 
 /* 
 ***************************************
@@ -373,4 +368,65 @@ inherit;
 	color: #FFF;
 	padding: 15px 20px;
 	border-radius: 0 0 10px 10px;
+}
+
+
+/* 
+***************************************
+********Interactive Image menu*********
+***************************************
+*/
+
+.iPhone{
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    width: 150px;
+    position: relative;
+}
+.iPhone > li > a{
+    display: block;
+    padding: 20px;
+    background-color: #ff7f15;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-decoration: none;
+}
+.iPhone > li.active > a{
+    background-color: #5c007a;
+}
+.iPhone > li.active > a:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 27px;
+    right: -6px;
+    border-bottom: 1px solid #FFF;    
+    border-right: 1px solid #FFF; 
+    transform: rotate(-45deg);
+    z-index: 100;
+}
+.iPhone > li > a:hover{
+    background-color: #5c007a;
+}
+.iPhone .submenu{
+    position: absolute;
+    border: 1px solid rgba(69, 214, 2, 0.89);
+    background-color: #fff;
+    top: 0;
+    left: 150px;
+    padding-left: 0;
+    display: none;
+    width: 605px;
+}
+.iPhone > li:hover .submenu{
+    display: block;
+}
+.iPhone > li.active .submenu{
+    display: block;
+}
+
+.iPhone .submenu img{
+    display: block;
 }

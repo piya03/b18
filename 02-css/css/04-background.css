@@ -77,3 +77,78 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Background related properties
    ========================================================================== */
+
+
+   body{
+       background-color: aliceblue;
+   }
+
+   .one,
+   .two{
+       border: 1px solid #000;
+       background-color: aliceblue;
+
+   }
+   .two{
+       position: relative;
+       top: -10px;
+       background-color: rgba(255, 0, 100, .9);
+
+   }
+
+.dabba{
+    min-height: 300px;
+    border: 20px solid #000;
+    margin-bottom: 30px;
+}
+.bgi-demo1{
+    background-color: #8873f6;
+    background-image: url('../img/floral-no-transparency.png');
+}
+.bgi-demo2{
+    background-color: #8873f6;
+    background-image: url('../img/floral-transparent.png');
+}
+.bgr-demo1{
+    background-color: #0d2b6a;
+    background-image: url('../img/floral-transparent.png');
+    background-repeat: repeat-y;
+}
+.bgr-demo2{
+    background-color: #0d2b6a;
+    background-image: url('../img/floral-transparent.png');
+    background-repeat: repeat-x;
+}
+.bgr-demo3{
+    background-color: #0d2b6a;
+    background-image: url('../img/floral-transparent.png');
+    background-repeat: no-repeat;
+}
+
+
+.bgp-demo{
+    background-color: #0f0;
+    background-image: url('../img/floral-no-transparency.png');
+    background-repeat: no-repeat;
+    border-color: rgba(0,0,0,.5);
+}
+.bgp-demo-1{ background-position: right top;}
+.bgp-demo-2{ background-position: right bottom;}
+.bgp-demo-3{ background-position: center center;}
+
+.bgp-demo-4{ background-position: 50% 100%;}
+.bgp-demo-5{ background-position: 50%;}
+.bgp-demo-6{ background-position: 100px 100px;}
+.bgp-demo-7{ background-position: 0 0;}
+.bgp-demo-8{ 
+    background-position: -50px -50px;
+    background-repeat: repeat;
+}
+.bgp-demo-9{ 
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.bgp-demo-10{ 
+    background-position: -50px -50px;
+}
+

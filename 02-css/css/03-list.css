@@ -13,8 +13,8 @@ List related style properties
 +++++++++++++++++++++++++++++++++++++++++++
 
 ~  list-style-type: none
-                    disc | circle | square ----- for ul
-                    decimal | decimal-leading-zero | lower-roman | upper-roman --- for ol
+                    disc | circle | square
+                    decimal | decimal-leading-zero | lower-roman | upper-roman
                     lower-alpha | upper-alpha
                     kannada | tamil | devanagari | malayalam
     ^ default value for ul li is disc
@@ -53,34 +53,27 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters
    Demo of List related properties
    ========================================================================== */
 
-
-   .ul-wrap{
-       border: 1px solid #000;
-       background-color: lightgreen;
+   .ul-wrap {
+       border: 1px solid red;
+       background: aqua;
+       
    }
-   .ul-default-style-demo{
-        border: 1px solid #000;
-        background-color: #fff;
+   .ul-demo{
+    background: white;
    }
-   .ul-default-style-demo li{
-        border: 1px solid red;
-        background-color: lightblue;
-   }
-
-
-.ls-demo{
-    list-style-type: devanagari;
+.ul-demo> li{
+    
+    border: 1px solid greenyellow;
+    background: darkgrey;
+}
+.another {
+    
+}
+.another .another-ul-demo {
     list-style-position: inside;
+    list-style-type: devanagari;
 }
-
-.ls-demo ul{
-    list-style-image: url('../img/bullet.png');
-}
-
-/* reset the defaults */
-ul.linkz{
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+.another-ul-demo > ul{
+    
+  list-style-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH3NTIbPqPFqOyq8HjVzd1smCTajK5zDNn9F_slHusK2j8iTMj');
 }

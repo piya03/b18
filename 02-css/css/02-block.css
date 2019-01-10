@@ -72,6 +72,7 @@ inherit;
    Demo of Block related properties
    ========================================================================== */
 
+   
    .word-spacing-demo{
        word-spacing: 10px;
    }
@@ -166,38 +167,29 @@ inherit;
     display: block;
 }
 
-
-/* 
-***************************************
-***********Navigation menu style*******
-***************************************
-*/
-
 .linkz{
     list-style: none;
     margin: 50px 0 25px;
     padding: 0 0 0 10px;
-    border-bottom: 4px solid #5c007a;
+    border-bottom: 4px solid hotpink;
 }
-.linkz > li{
-    display: inline-block;
-    position: relative;
-}
+
 .linkz > li > a{
+    border: 1px solid hotpink;
     display: block;
+    padding: 5px 10px;
+    background: green;
     position: relative;
-    padding: 2px 10px;
-    background-color: #8e24aa;
-    border-radius: 6px 6px 0 0;
-    color: #FFF;
+    color: white;
     text-decoration: none;
+    border-radius: 10px 10px 0 0;
 }
 .linkz > li.active > a{
-    padding-top: 6px;
-    background-color: #5c007a;
+    padding-top: 10px;
+    background:  green;
 }
-.linkz > li.has-submenu > a{
-    padding-right: 30px;
+.linkz > li.has-submenu > a {
+    padding-left: 10px;
 }
 .linkz > li.has-submenu > a:after{
     content: "";
@@ -206,14 +198,23 @@ inherit;
     position: absolute;
     top: 8px;
     right: 10px;
-    border-bottom: 1px solid #FFF;    
-    border-right: 1px solid #FFF; 
-    transform: rotate(45deg)   
+    transform: rotate(45deg);
+    border-bottom: 4px solid red;
+    border-right:   4px solid red;
+
+ 
 }
-.linkz > li > a:hover{
-    background-color: #5c007a;
+
+.linkz > li{
+    border: 1px solid #000;
+    display: inline-block;
+    position: relative;
+    border: none;
 }
-.linkz .submenu{
+.linkz > li > a:hover {
+    background: yellow;
+}
+.sub-menu{
     position: absolute;
     border: 1px solid rgba(69, 214, 2, 0.89);
     background-color: #fff;
@@ -222,14 +223,14 @@ inherit;
     padding-left: 0;
     display: none;
 }
-.linkz > li:hover .submenu{
+.linkz > li:hover .sub-menu{
     display: block;
 }
 
-.linkz .submenu li{
+.sub-menu li{
     padding: 4px
 }
-.linkz .submenu li a{
+.sub-menu li a{
     padding: 4px;
     background-color: rgb(3, 94, 3);
     color: #FFF;
@@ -240,106 +241,186 @@ inherit;
     width: 300px;
     display: inline-block;
 }
-
-
-
-/* 
-***************************************
-***********Navigation menu style*******
-***************************************
-*/
-
-.linkz1{
-    list-style: none;
-    margin: 50px 0 25px;
-    padding: 0 0 0 10px;
+/* ///////////////////////////////////////content-demo */
+.content-demo {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 20px 40px;
+    
+    counter-reset: my-sec-counter;
 }
-.linkz1 > li{
-    display: inline-block;
+.content-demo li::before{
+    counter-increment: my-sec-counter;
+    content: "Section " counter(my-sec-counter) ". ";
+
+}
+.sub-section {
+    
+    counter-reset: subsection;
+  }
+  .sub-section > li::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+    
+  }
+  /* //////////assignment code here */
+   .main-container {
+    
+    display: flex;
+    background: cyan;
+   
+   }
+    .iPhone{
+        list-style: none;
+        margin: 20px;
+        padding: 0;
+        width: 135px;
+        position: relative;
+    }
+    .iPhone > li > a{
+        display: block;
+        padding: 30px;
+        background-color: #ff7f15;
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-decoration: none;
+        margin-top: 6px;
+        padding-bottom: 50px;
+        width: 0px;
+    
+    }
+    .iPhone > li.active > a{
+        background-color: #5c007a;
+    }
+    .iPhone > li.active > a:after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 27px;
+        right: -6px;
+        border-bottom: 1px solid #FFF;    
+        border-right: 1px solid #FFF; 
+        transform: rotate(-45deg);
+        z-index: 100;
+    }
+    .iPhone > li > a:hover{
+        transition: width 1s;
+        content: "";
+        width: 100%;
+        background: #8343f0;
+        border-radius: 0px 10px 10px 0px;
+     
+         */
+    }
+    .iPhone .submenu{
+        position: absolute;
+        border: 1px solid rgba(69, 214, 2, 0.89);
+        background-color: #fff;
+        top: 0;
+        left: 150px;
+        padding-left: 0;
+        display: none;
+        width: 500px;
+        height: 450px;
+    
+    }
+    .iPhone .submenu img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .iPhone > li:hover .submenu{
+        display: block;
+    }
+    .iPhone > li.active .submenu{
+        display: block;
+    }
+    
+    .iPhone .submenu img{
+        display: block;
+    }
+   /* }
+  .main-contaner .button-section{
+    background: aqua;
+    height: 450px;
     position: relative;
-}
-.linkz1 > li > a{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .button-section button {
     display: block;
+    height: 100px;
+    width: 100px;
+    background: violet;
+    font-size: 20px;
+    border: none;
     position: relative;
-    padding: 2px 20px;
-    background-color: #8e24aa;
-    border-radius: 20px;
-    color: #FFF;
-    text-decoration: none;
-}
-.linkz1 > li.active > a{
-    background-color: #5c007a;
-}
-.linkz1 > li.has-submenu > a{
-    padding-right: 30px;
-}
-.linkz1 > li.has-submenu > a:after{
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    margin-bottom: 5px;
+    outline: none;
+    z-index: 1;
+  }
+  .iphone2:hover {
+    background-image: url("https://cdn.macworld.co.uk/cmsdata/reviews/3684095/iphone-xr-vs-iphone-8-plus_thumb1200_4-3.jpg");
+    background-position: 50% 50%; 
+      
+  }
+ 
+  .button-section button::after{
+      content: "";
+     width: 10px;
+      height: 10px;
+      position: absolute;
+      transform: rotate(-45deg);
+      border-bottom: 6px solid violet;
+      border-right: 8px solid violet;
+      right: -5px;
+      z-index: 1;
+  }
+  .button-section button::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0%;
+  }
+  .button-section button:hover::before {
+    transition: width 1s;
     content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    border-bottom: 1px solid #FFF;    
-    border-right: 1px solid #FFF; 
-    transform: rotate(45deg)   
+    width: 100%;
+    background: #8343f0;
+    border-radius: 0px 10px 10px 0px;
+    z-index: -1;
+  }
+  .button-section button:hover:after {
+      content: "";
+      transition: all 0.2s;
+      transition-delay: 0.70s;
+    border-bottom: 6px solid #8343f0;
+      border-right: 8px solid #8343f0;
 }
-.linkz1 > li > a:hover{
-    background-color: #5c007a;
-}
-.linkz1 .submenu{
-    position: absolute;
-    border: 1px solid rgba(69, 214, 2, 0.89);
-    background-color: #fff;
-    top: 20px;
-    left: 0;
-    padding-left: 0;
-    display: none;
-}
-.linkz1 > li:hover .submenu{
-    display: block;
-}
-
-.linkz1 .submenu li{
-    padding: 4px
-}
-.linkz1 .submenu li a{
-    padding: 4px;
-    background-color: rgb(3, 94, 3);
-    color: #FFF;
-    text-decoration: none;
-}
-
-
-/* 
-***************************************
-***********Content demo****************
-***************************************
-*/
-
-.content-demo{
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background-color: aliceblue;
-    padding: 20px 40px
-}
-.content-demo li:before{
-    content: "Chapter: ";
-}
-
-
-
-/* 
-***************************************
-***********text-overflow demo**********
-***************************************
-*/
-
-
+.iphone1:hover 
+  .image {
+    
+    width: 78%;
+    height: 415px;
+  }
+  .image img {
+      height: 100%;
+      width: 100%;
+  } */
+/* /////////////////////////////////// */
 
 .widget{
 	min-width: 300px;
-	max-width: 800px;
+	max-width: 450px;
 	margin: 20px auto 20px auto;
 	border-radius: 10px;
 
@@ -350,15 +431,7 @@ inherit;
 	margin: 0 0 20px;
 	color: #FFF;
 	padding: 15px 20px;
-    border-radius: 10px 10px 0 0;
-    
-    /* truncating text */
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-
-
-
+	border-radius: 10px 10px 0 0;
 }
 .widget p{
 	color: #FFF;
@@ -371,63 +444,3 @@ inherit;
 	border-radius: 0 0 10px 10px;
 }
 
-
-/* 
-***************************************
-********Interactive Image menu*********
-***************************************
-*/
-
-.iPhone{
-    list-style: none;
-    margin: 20px;
-    padding: 0;
-    width: 150px;
-    position: relative;
-}
-.iPhone > li > a{
-    display: block;
-    padding: 20px;
-    background-color: #ff7f15;
-    border: 1px solid #FFF;
-    color: #FFF;
-    text-decoration: none;
-}
-.iPhone > li.active > a{
-    background-color: #5c007a;
-}
-.iPhone > li.active > a:after{
-    content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 27px;
-    right: -6px;
-    border-bottom: 1px solid #FFF;    
-    border-right: 1px solid #FFF; 
-    transform: rotate(-45deg);
-    z-index: 100;
-}
-.iPhone > li > a:hover{
-    background-color: #5c007a;
-}
-.iPhone .submenu{
-    position: absolute;
-    border: 1px solid rgba(69, 214, 2, 0.89);
-    background-color: #fff;
-    top: 0;
-    left: 150px;
-    padding-left: 0;
-    display: none;
-    width: 605px;
-}
-.iPhone > li:hover .submenu{
-    display: block;
-}
-.iPhone > li.active .submenu{
-    display: block;
-}
-
-.iPhone .submenu img{
-    display: block;
-}

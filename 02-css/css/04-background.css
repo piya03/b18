@@ -77,168 +77,245 @@ https://developer.mozilla.org/en/docs/Web/CSS/background-color
 /* ==========================================================================
    Demo of Background related properties
    ========================================================================== */
-
-
-   body{
-       background-color: aliceblue;
-   }
-
-   .one,
-   .two{
-       border: 1px solid #000;
-       background-color: aliceblue;
-
-   }
-   .two{
-       position: relative;
-       top: -10px;
-       background-color: rgba(255, 0, 100, .9);
-
-   }
-
-.dabba{
+body {
+    background: aliceblue;
+}
+.one .two {
+background: yellow;
+border: 1px solid green;
+}
+.two {
+    position: relative;
+    top: -20p;
+    background: pink;
+}
+/* //////////////////////////////////// */
+.container{
+    width: 75%;
+    margin: auto;
+}
+.dabba {
+    background: #7dbbbd;
+    border: 10px solid red;
+    color: white;
     min-height: 300px;
-    border: 20px solid #000;
-    margin-bottom: 30px;
 }
-.bgi-demo1{
-    background-color: #8873f6;
-    background-image: url('../img/floral-no-transparency.png');
-}
-.bgi-demo2{
-    background-color: #8873f6;
-    background-image: url('../img/floral-transparent.png');
-}
-.bgr-demo1{
-    background-color: #0d2b6a;
-    background-image: url('../img/floral-transparent.png');
-    background-repeat: repeat-y;
-}
-.bgr-demo2{
-    background-color: #0d2b6a;
-    background-image: url('../img/floral-transparent.png');
+.bgimg {
+    background: yellow;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
     background-repeat: repeat-x;
 }
-.bgr-demo3{
-    background-color: #0d2b6a;
-    background-image: url('../img/floral-transparent.png');
+.bgimg2 {
+    background: lightblue;
+    background-image: url("https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8d/Transparent-color-cubes-pattern-background.jpg/revision/latest?cb=20160830034311");
     background-repeat: no-repeat;
 }
-
-
-.bgp-demo{
-    background-color: #0f0;
-    background-image: url('../img/floral-no-transparency.png');
+.bgimg3 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlmpQ6_SgCx1KFK_PLXhgPnOu3I2slaLMjK7Y13uEHjcVHoPFG");
     background-repeat: no-repeat;
-    border-color: rgba(0,0,0,.5);
+    background-position: right top;
 }
-.bgp-demo-1{ background-position: right top;}
-.bgp-demo-2{ background-position: right bottom;}
-.bgp-demo-3{ background-position: center center;}
-
-.bgp-demo-4{ background-position: 50% 100%;}
-.bgp-demo-5{ background-position: 50%;}
-.bgp-demo-6{ background-position: 100px 100px;}
-.bgp-demo-7{ 
+.bgimg4 {
+    background: #e8c2cd;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfpGcZfNOEMi5KxNb9tPlxzhY4BXZIFC8x1K4i1PbjjeFGnnJ");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.bgimg5 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bgimg6 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 50% ;
+}
+.bgimg7 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+}
+.bgimg8 {
+    background: #e0cedb;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: -50px -50px;
+}
+.bgimg9{
+    background: #938dce;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
     background-position: 0 0;
-    transition: all 250ms ease-out;
-
-
-    transition: all 250ms ease-in-out;
-
-
-
-
+    background-repeat: repeat;
 }
-.bgp-demo-7:hover{ 
+.bgimg10{
+    background: #c7e3f3 ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG93zwrL6dabKU6Uq3wAS_q4o1YKj977829KpWxaFHdW-Ileovpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-repeat: 0 0, repeat;
+    transform: all 250ms ease;
+}
+.bgimg10:hover{
+    background: #c7e3f3 ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
     background-position: 100% 100%;
+    background-repeat: 0 0, repeat;
+    transform: all 250ms ease;
 }
-.bgp-demo-8{ 
-    background-position: -50px -50px;
-    background-repeat: repeat;
-}
-.bgp-demo-9{ 
+.bgimg11{
+    background: #e4a1d0;
+    background-image: url("./img/flower.png");
+    background-repeat: no-repeat;
     background-position: 0 0;
-    background-repeat: repeat;
+    background-repeat: -50px -50px, repeat;
 }
-.bgp-demo-10{ 
-    background-position: -50px -50px;
-}
-
-
-
 /* 
-Shorthand property
-background [color image repeat attachment position] 
-*/
+//////////////////////////short hand property */
+.bgimg12{
+  
 
-.bgp-demo11{
-    background: #0f0 url('../img/floral-no-transparency.png') no-repeat scroll left center;
+    background: #c7e3f3  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54GFjg8SNXqW4bJa4TbEX0kEGJAWpJ5IWHtlukmJxBnGWTXf0") no-repeat scroll left center;
 }
-
+/* 
+////////////////////background attatchment */
 .cover{
-    border: 4px solid #000;
+    border: 4px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54GFjg8SNXqW4bJa4TbEX0kEGJAWpJ5IWHtlukmJxBnGWTXf0");
     min-height: 300px;
-    background-image: url('../img/banner-desktop.jpg');
     background-attachment: fixed;
 }
-/* 
-~  background-size – auto | contain | cover | -length-
-*/
-.cover1{
-    border: 4px solid #000;
-    min-height: 500px;
-    background-image: url('../img/cover-pic.jpg');
-    background-repeat: no-repeat; 
-    background-size: 300px auto;   
+.cover2{
+    border: 4px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfpGcZfNOEMi5KxNb9tPlxzhY4BXZIFC8x1K4i1PbjjeFGnnJ");
+    min-height: 300px;
+    background-attachment: scroll;
+    background-size: 60% auto; 
+    background-repeat: no-repeat;
 }
 
-.bgp-demo12{
-    background-image: url('../img/cover-pic.jpg');
+.bgimg13{
+    border: 14px solid pink;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+.bgimg14{
+    border: 14px solid pink;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB"); */
+    min-height: 300px;
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient( pink, lightblue, #7dbbbd); */
+    background-image: url("../img/flower.png"), linear-gradient(blue, pink);
+}
+.bgimg15 {
+    background-image: url(""), url("");
     padding: 20px;
-    background-size: cover;
-    background-origin: content-box; 
-    background-clip: border-box; 
+    background-attachment: scroll scroll fixed;
 }
 
-.bgp-demo13{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
-background: #b5bdc8; /* Old browsers */
-background: linear-gradient(135deg, #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-.bgp-demo14{
-    background-image: url('../img/100px-ruler.png'), url('../img/100px-h-ruler.png'), url('../img/square-pattern.png') ;
-    background-attachment: scroll, scroll, fixed;
-    padding: 20px;
-}
-
-.my-sprites{
+.my-sprites {
     list-style: none;
     margin: 30px 0;
     border: 1px solid #DDD;
     padding: 40px;
+
 }
-.my-sprites li{
-    margin-bottom: 20px;
-    position: relative;
+.my-sprites li {
+    margin-bottom: 30px;
+
 }
 .my-sprites li:before{
     width: 25px;
     height: 25px;
-    border: 1px solid #03a9f4;
     content: "";
-    background-image: url('../img/number-grid.png');
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -30px;
-    top: -2px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    border  : 1px solid red;
+    position: relative;
+    left: -10px;
     border-radius: 50%;
-    background-size: 250px auto;
+    top: -5px;
+    background-repeat: no-repeat;
+background-size: 250px auto;
 }
-.nu1:before{background-position: -19px -8px;}
-.nu2:before{background-position: -65px -8px;}
-.nu3:before{background-position: -111px -8px;}
-.nu4:before{background-position: -158px -8px;}
-.nu5:before{background-position: -204px -8px;}
-.nu6:before{background-position: -19px -8px;}
+/* h///////////////////ere is assignment //////////////////// */
+.gallary-box{
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-and-text{
+    height: 300px;
+    width: 300px;
+    background: #e7ebef;
+    /* background-image: url("https://cdn-images-1.medium.com/max/1920/1*JSTSwAbHWIJFJUOTFC3sMw.jpeg"); */
+    margin: 15px;
+    box-shadow: 5px 5px 2px lightblue;
+
+    
+}
+.image-and-text:hover{
+   
+}
+.imgdiv {
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+.imgdiv2{
+    background-image: url(https://cdn-images-1.medium.com/max/1920/1*JSTSwAbHWIJFJUOTFC3sMw.jpeg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+.imgdiv::before{
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    left: -30%;
+}
+.imgdiv::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    top: 14%;
+    left: -24%;
+}
+.imgdiv .dot {
+    height: 30px;
+    width: 30px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    top: 33%;
+    left: -11%;
+    opacity: .5;
+}
+.imgdiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;}
+.imgdiv p {
+    text-align: center;
+    background: crimson ;
+   box-shadow: 1px 1px 3px #02021d;
+   color: white;
+}

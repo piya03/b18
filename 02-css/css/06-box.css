@@ -162,6 +162,36 @@ Box related important links
    Demo of Box related properties
    ========================================================================== */
 
+   .dabba{
+       border: 1px solid #000;
+       background-color: lightgreen;
+   }
 
+   .demo-wrap{
+       border: 1px solid #000;
+   }
    
-   
+.w-demo{width: 300px;}
+
+.mar-20{
+    margin: 20px 0;
+}
+.min-w-demo{min-width: 400px;}
+
+.display-ib{display: inline-block;}
+
+
+
+.box1{
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+.overflow-demo{ overflow: hidden;}
+.overflow-demo1{ overflow: scroll;}
+.overflow-demo2{ overflow: auto;}
+
+

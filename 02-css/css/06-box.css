@@ -194,4 +194,55 @@ Box related important links
 .overflow-demo1{ overflow: scroll;}
 .overflow-demo2{ overflow: auto;}
 
+.m-demo{
+    margin: 20px;
+    border: solid 1px red;
+}
+
+
+.wrapp{
+    border: solid 5px green;
+    margin: 10px 10px 0;
+    padding: 20px;
+}
+.dabba1{
+    border: 5px solid #F00;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.item{
+    border: 1px solid #000;
+    background-color: tomato;
+    width: 100px;
+    min-height: 100px;
+    display: inline-block;
+    margin: 15px;
+}
+.pad-20{
+    padding: 10px;
+}
+
+
+
+.box-sizing-demo{
+    border: 25px solid #000;
+    background: wheat;
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+}
+/* width = border-left + padding-left + width + padding-right + border-right */
+/* padding and border are will be excluded in the width specified */
+
+.box-sizing-demo1{
+    border: 25px solid #000;
+    background: wheat;
+    padding: 25px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+/* width = width  */
+/* padding and border are will be within the width specified */
 
